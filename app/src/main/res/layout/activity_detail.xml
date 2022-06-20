@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <ImageView android:id="@+id/detail_img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        />
+
+    <TextView android:id="@+id/detail_txt_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="노래 제목"
+        android:textSize="30sp"
+        />
+
+    <TextView android:id="@+id/detail_txt_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="가수 이름"
+        android:textSize="20sp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="20dp">
+
+        <TableRow android:weightSum="5"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="작사"
+                android:textStyle="bold"
+                />
+
+            <TextView android:id="@+id/detail_tbl_txt_content1"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="sample sample sample sample sample sample sample sample"
+                android:singleLine="false"
+                />
+
+        </TableRow>
+
+        <TableRow android:weightSum="5"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="작곡"
+                android:textStyle="bold"
+                />
+
+            <TextView android:id="@+id/detail_tbl_txt_content2"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="sample sample sample sample sample sample sample sample"
+                />
+
+        </TableRow>
+
+        <TableRow android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="장르"
+                android:textStyle="bold"
+                />
+
+            <TextView android:id="@+id/detail_tbl_txt_content3"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="sample sample sample sample sample sample sample sample"
+                android:singleLine="false"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <TextView android:id="@+id/adapter_txt_no"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="1"
+        />
+
+    <ImageView android:id="@+id/adapter_img_album"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="50dp"
+        android:src="@drawable/dynamite"
+        android:scaleType="centerInside"
+        />
+
+    <TextView android:id="@+id/adapter_txt_title"
+        android:layout_width="0dp"
+        android:layout_weight="4.5"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:text="노래 제목을 여기에 넣어 주세요 길게 한줄로 표시"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <TextView android:id="@+id/adapter_txt_artist"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:text="가수 제목 우측 정렬로 한줄만 표시"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+
+</LinearLayout>
